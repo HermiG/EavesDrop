@@ -346,7 +346,7 @@ function EavesDrop:OnInitialize()
         end
       end)
     end
-    if pxp == 0 then
+    if pxp == 0 and not (PLAYER_CURRENT_LEVEL == 1 or PLAYER_CURRENT_LEVEL == 10) then
       --@debug@
       print("Getting player's pxp in 4 seconds!")
       --@end-debug@
